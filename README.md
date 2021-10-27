@@ -26,7 +26,7 @@ app.get('/api/product/list', asyncCatch(async (req, res, next) => {
 ```
 
 ## Notes
-* This wrapper will catch both thrown Errors.
+* This wrapper will catch thrown Errors.
 * This wrapper will catch promise rejections, when the await keyword is used.
 * It cannot catch errors that generated un-awaited promises.
 * It cannot catch errors that are handled via callbacks.
