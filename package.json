@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Simple wrapper for Express route handlers, which propagates errors to the centralized error handler.",
   "main": "index.js",
+  "scripts": {
+    "example": "npx nodemon ./examples/server.js"
+  },
   "keywords": [
     "express",
     "async-await",
@@ -22,10 +25,11 @@
     "url": "https://github.com/paulsmithkc/express-async-catch/issues"
   },
   "homepage": "https://github.com/paulsmithkc/express-async-catch#readme",
-  "devDependencies": {
+  "peerDependencies": {
     "express": "^4.17.1"
   },
-  "peerDependencies": {
+  "devDependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   }
 }
